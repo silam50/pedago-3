@@ -4,7 +4,7 @@ export function renderMyAccount(): string {
         <div class="card-container">
           <div class="card">
             <div class="card-header">
-              <div class="logo">Logo</div>
+              <h1> Logo </h1>
             </div>
             <div class="card-body d-flex">
               <div class="user-image">
