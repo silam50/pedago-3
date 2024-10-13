@@ -11,6 +11,9 @@ import { registerUsers } from './models/joinTables/usersCoursesModel.ts';
 import { users } from './models/users.ts';
 import { getUserCourses } from './controllers/userCoursesCont.ts';
 import { renderUserCourses } from './view/userCouses/UserCoursesView.ts';
+import { getSubjectsInCourse } from './controllers/courseSubjectCont.ts';
+import { courses } from './models/Course.ts';
+import { courseSubjects } from './models/courseSubjects.ts';
 
 
 
@@ -26,3 +29,4 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = renderUserCourses(us
 
 
 
+getSubjectsInCourse(courses[0],courseSubjects);
